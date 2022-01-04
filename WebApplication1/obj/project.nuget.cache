@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "auEmT2FRLeR6p/15Cm9WSX7vlVO3TIwOmEeqMnf0XGIjQUWwIxXEpxhG+H9XnjrDpIrdPritmRR3PKCLoA7VrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dbhsoft\\source\\repos\\HappyChristmas\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dbhsoft\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

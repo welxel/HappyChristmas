@@ -1,0 +1,107 @@
+﻿@*@model Personel
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Form Tutorial</title>
+        <style>
+            .login-form {
+                width: 300px;
+                margin: 0 auto;
+                font-family: Tahoma, Geneva, sans-serif;
+            }
+
+                .login-form h1 {
+                    text-align: center;
+                    color: #4d4d4d;
+                    font-size: 24px;
+                    padding: 20px 0 20px 0;
+                }
+
+                .login-form input[type="password"],
+                .login-form input[type="text"] {
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid #dddddd;
+                    margin-bottom: 15px;
+                    box-sizing: border-box;
+                }
+
+                .login-form input[type="submit"] {
+                    width: 100%;
+                    padding: 15px;
+                    background-color: #535b63;
+                    border: 0;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+        </style>
+    </head>~/images/foto1.jpg
+    <body>
+        <div class="login-form">
+            <h1>Yılbaşı Çekilişi</h1>
+            <form action="@Url.Action("Raffle", "Home")" method="POST">
+                <input type="text" name="Email" placeholder="Email" required>
+                <input type="submit" value="Çekilişe Katıl">
+            </form>
+        </div>
+    </body>
+    </html>*@
+@model Personel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoşgeldiniz</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/css/adminlte.min.css">
+</head>
+<body style="background-image: url('/plugins/img/login.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+" class="hold-transition lockscreen">
+    <!-- Automatic element centering -->
+    <div style="margin-top:30%;" class="lockscreen-wrapper">
+        <div class="lockscreen-logo">
+            <a style="color:white"><b>Happy</b> &nbsp; Christmas</a>
+        </div>
+        <!-- User name -->
+        <div class="lockscreen-name"><h4 style="color:white;">Yılbaşı Çekilişimize Hoşgeldiniz :)</h4></div>
+        <br />
+        <div class="lockscreen-item">
+            <div class="lockscreen-image">
+                <img src="/plugins/img/sid.jpg" alt="User Image">
+            </div>
+            <form action="@Url.Action("Raffle", "Home")" method="POST" class="lockscreen-credentials">
+                <div class="input-group">
+                    <input name="Email" type="email" class="form-control" placeholder="Email" required>
+
+                    <div class="input-group-append">
+                        <button type="submit" class="btn">
+                            <i class="fas fa-arrow-right text-muted"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- /.lockscreen credentials -->
+
+        </div>
+
+    </div>
+    <!-- /.center -->
+    <!-- jQuery -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
